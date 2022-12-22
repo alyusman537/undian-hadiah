@@ -1,0 +1,158 @@
+CRITICAL - 2022-12-18 00:35:04 --> Class "App\Controllers\ModelKelompok" not found
+in APPPATH/Controllers/Undian.php on line 40.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-18 00:35:41 --> Undefined property: App\Controllers\Undian::$db
+in APPPATH/Controllers/Undian.php on line 40.
+ 1 APPPATH/Controllers/Undian.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-18 00:37:03 --> Cannot use object of type App\Models\ModelPeserta as array
+in APPPATH/Controllers/Undian.php on line 43.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-18 00:37:32 --> Call to undefined method App\Models\ModelKelompok::fisrt
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Undian.php(43): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-18 20:00:11 --> Call to undefined method App\Models\ModelPemenang::countAllResult
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Undian.php(61): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->simpanPemenang()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-18 20:09:39 --> Undefined property: stdClass::$anggota
+in APPPATH/Controllers/Undian.php on line 67.
+ 1 APPPATH/Controllers/Undian.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->simpanPemenang()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-18 20:29:49 --> Trying to access array offset on value of type int
+in APPPATH/Controllers/Undian.php on line 73.
+ 1 APPPATH/Controllers/Undian.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->simpanPemenang()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-18 20:55:08 --> mysqli_sql_exception: Unknown column 'deleted-at' in 'where clause' in /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /mnt/data/CI4/undian/app/Controllers/Undian.php(66): CodeIgniter\BaseModel->first()
+#7 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Undian->simpanPemenang()
+#8 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/data/CI4/undian/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('...')
+#12 {main}
+CRITICAL - 2022-12-18 20:55:08 --> Unknown column 'deleted-at' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Undian.php(66): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->simpanPemenang()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-18 21:09:01 --> mysqli_sql_exception: Unknown column 'anggota' in 'where clause' in /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /mnt/data/CI4/undian/app/Controllers/Undian.php(45): CodeIgniter\BaseModel->first()
+#7 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+#8 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/data/CI4/undian/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('...')
+#12 {main}
+CRITICAL - 2022-12-18 21:09:01 --> Unknown column 'anggota' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Undian.php(45): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-18 21:10:01 --> mysqli_sql_exception: Unknown column 'anggota' in 'where clause' in /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /mnt/data/CI4/undian/app/Controllers/Undian.php(45): CodeIgniter\BaseModel->first()
+#7 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+#8 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /mnt/data/CI4/undian/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('...')
+#12 {main}
+CRITICAL - 2022-12-18 21:10:01 --> Unknown column 'anggota' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Undian.php(45): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-18 22:35:48 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 50.
+ 1 APPPATH/Controllers/Undian.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-18 22:52:00 --> file_get_contents(/mnt/data/CI4/undian/writable/uploads/foto/null): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

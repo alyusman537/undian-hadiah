@@ -1,0 +1,99 @@
+CRITICAL - 2022-12-20 19:09:23 --> unlink(/srv/undian/writable/debugbar/debugbar_1671504249.072600.json): No such file or directory
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Debug/Toolbar/Collectors/History.php(76): unlink()
+ 3 SYSTEMPATH/Debug/Toolbar.php(500): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles()
+ 4 SYSTEMPATH/Debug/Toolbar.php(477): CodeIgniter\Debug\Toolbar->format()
+ 5 APPPATH/Config/Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH/CodeIgniter.php(328): CodeIgniter\Events\Events::trigger()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 19:10:17 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 50.
+ 1 APPPATH/Controllers/Undian.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 19:10:30 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 50.
+ 1 APPPATH/Controllers/Undian.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 19:10:31 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 50.
+ 1 APPPATH/Controllers/Undian.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 19:28:21 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 31.
+ 1 APPPATH/Controllers/Undian.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->hadiahByKode()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 19:55:17 --> file_get_contents(/srv/undian/writable/uploads/foto/null): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 19:58:14 --> file_get_contents(/srv/undian/writable/uploads/foto/null): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 20:33:00 --> file_get_contents(/srv/undian/writable/uploads/foto/null): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 20:34:57 --> file_get_contents(/srv/undian/writable/uploads/foto/no-image.jpg): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 21:19:59 --> file_get_contents(/srv/undian/writable/uploads/foto/beat.jpg): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 21:21:40 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 50.
+ 1 APPPATH/Controllers/Undian.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 21:28:23 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 50.
+ 1 APPPATH/Controllers/Undian.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 21:41:02 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 50.
+ 1 APPPATH/Controllers/Undian.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

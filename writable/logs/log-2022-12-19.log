@@ -1,0 +1,159 @@
+CRITICAL - 2022-12-19 00:54:39 --> file_get_contents(/mnt/data/CI4/undian/writable/uploads/foto/null): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-19 01:02:42 --> file_get_contents(/mnt/data/CI4/undian/writable/uploads/foto/null): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-19 01:02:58 --> file_get_contents(/mnt/data/CI4/undian/writable/uploads/foto/null): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-19 01:21:38 --> mysqli_sql_exception: Unknown column 'kode' in 'where clause' in /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere()
+#5 /mnt/data/CI4/undian/app/Controllers/Undian.php(60): CodeIgniter\Model->__call()
+#6 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Undian->daftarPemenang()
+#7 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/data/CI4/undian/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('...')
+#11 {main}
+CRITICAL - 2022-12-19 01:21:38 --> Unknown column 'kode' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1718): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(772): CodeIgniter\Database\BaseBuilder->getWhere()
+ 6 APPPATH/Controllers/Undian.php(60): CodeIgniter\Model->__call()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->daftarPemenang()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-19 01:30:27 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 31.
+ 1 APPPATH/Controllers/Undian.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->hadiahByKode()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-19 01:37:25 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 31.
+ 1 APPPATH/Controllers/Undian.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->hadiahByKode()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-19 01:38:34 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 31.
+ 1 APPPATH/Controllers/Undian.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->hadiahByKode()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-19 19:01:27 --> file_get_contents(/mnt/data/CI4/undian/writable/uploads/foto/null): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-19 19:39:01 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 31.
+ 1 APPPATH/Controllers/Undian.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->hadiahByKode()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 19:40:16 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 50.
+ 1 APPPATH/Controllers/Undian.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 19:41:36 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 31.
+ 1 APPPATH/Controllers/Undian.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->hadiahByKode()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 19:42:22 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 31.
+ 1 APPPATH/Controllers/Undian.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->hadiahByKode()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 19:44:44 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 31.
+ 1 APPPATH/Controllers/Undian.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->hadiahByKode()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 20:15:44 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 31.
+ 1 APPPATH/Controllers/Undian.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->hadiahByKode()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 20:43:55 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 31.
+ 1 APPPATH/Controllers/Undian.php(31): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->hadiahByKode()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 20:44:02 --> file_get_contents(/srv/undian/writable/uploads/foto/null): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 20:46:21 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Undian.php on line 50.
+ 1 APPPATH/Controllers/Undian.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->pesertaByNia()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 20:46:52 --> file_get_contents(/srv/undian/writable/uploads/foto/null): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

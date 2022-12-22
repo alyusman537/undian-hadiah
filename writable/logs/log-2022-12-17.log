@@ -1,0 +1,233 @@
+ERROR - 2022-12-17 19:04:38 --> mysqli_sql_exception: Table 'peserta' already exists in /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/Forge.php(509): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/data/CI4/undian/app/Database/Migrations/2022-12-18-005747_Kelompok.php(29): CodeIgniter\Database\Forge->createTable()
+#5 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(868): App\Database\Migrations\Kelompok->up()
+#6 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(187): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CLI/Commands.php(63): CodeIgniter\Commands\Database\Migrate->run()
+#9 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(65): CodeIgniter\CLI\Commands->run()
+#10 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CLI/CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index()
+#11 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(920): CodeIgniter\CLI\CommandRunner->_remap()
+#12 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#13 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(347): CodeIgniter\CodeIgniter->handleRequest()
+#14 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CLI/Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 /mnt/data/CI4/undian/spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+CRITICAL - 2022-12-17 20:18:40 --> file_get_contents(/mnt/data/CI4/undian/writable/uploads/foto/bmt.jpg): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 20:19:10 --> file_get_contents(/mnt/data/CI4/undian/writable/uploads/foto/bmt.jpg): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 21:32:10 --> Class "Codeigniter\Controller" not found
+in APPPATH/Controllers/Home.php on line 8.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(282): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 21:32:29 --> Trait "CodeIgniter\ResposeTrait" not found
+in APPPATH/Controllers/Home.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-17 21:32:51 --> Trait "CodeIgniter\ResponseTrait" not found
+in APPPATH/Controllers/Home.php on line 8.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-12-17 21:33:38 --> mysqli_sql_exception: Unknown column 'p.nominal' in 'field list' in /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/data/CI4/undian/app/Models/ModelPemenang.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/data/CI4/undian/app/Controllers/Home.php(19): App\Models\ModelPemenang->daftarPemenang()
+#6 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Home->daftarPemenang()
+#7 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/data/CI4/undian/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('...')
+#11 {main}
+CRITICAL - 2022-12-17 21:33:38 --> Unknown column 'p.nominal' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/ModelPemenang.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(19): App\Models\ModelPemenang->daftarPemenang()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->daftarPemenang()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-17 21:37:05 --> mysqli_sql_exception: Unknown column 'k.nama' in 'field list' in /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/data/CI4/undian/app/Models/ModelPemenang.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/data/CI4/undian/app/Controllers/Home.php(19): App\Models\ModelPemenang->daftarPemenang()
+#6 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Home->daftarPemenang()
+#7 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/data/CI4/undian/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('...')
+#11 {main}
+CRITICAL - 2022-12-17 21:37:05 --> Unknown column 'k.nama' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/ModelPemenang.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(19): App\Models\ModelPemenang->daftarPemenang()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->daftarPemenang()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-17 21:37:54 --> mysqli_sql_exception: Unknown column 'p.level' in 'order clause' in /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/data/CI4/undian/app/Models/ModelPemenang.php(34): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/data/CI4/undian/app/Controllers/Home.php(19): App\Models\ModelPemenang->daftarPemenang()
+#6 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Home->daftarPemenang()
+#7 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/data/CI4/undian/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('...')
+#11 {main}
+CRITICAL - 2022-12-17 21:37:54 --> Unknown column 'p.level' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/ModelPemenang.php(34): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Home.php(19): App\Models\ModelPemenang->daftarPemenang()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Home->daftarPemenang()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 23:38:32 --> file_get_contents(/mnt/data/CI4/undian/writable/uploads/foto/undefined): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Render.php on line 22.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Render.php(22): file_get_contents()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Render->image()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2022-12-17 23:46:41 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::tabel()
+in APPPATH/Models/ModelPeserta.php on line 21.
+ 1 APPPATH/Controllers/Undian.php(34): App\Models\ModelPeserta->listPeserta()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->listPeserta()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-17 23:47:03 --> mysqli_sql_exception: Unknown column 'k.nama' in 'field list' in /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/data/CI4/undian/app/Models/ModelPeserta.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/data/CI4/undian/app/Controllers/Undian.php(34): App\Models\ModelPeserta->listPeserta()
+#6 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Undian->listPeserta()
+#7 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/data/CI4/undian/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('...')
+#11 {main}
+CRITICAL - 2022-12-17 23:47:03 --> Unknown column 'k.nama' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/ModelPeserta.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Undian.php(34): App\Models\ModelPeserta->listPeserta()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->listPeserta()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-17 23:47:36 --> mysqli_sql_exception: Unknown column 'k.nama' in 'field list' in /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/data/CI4/undian/app/Models/ModelPeserta.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/data/CI4/undian/app/Controllers/Undian.php(34): App\Models\ModelPeserta->listPeserta()
+#6 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Undian->listPeserta()
+#7 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/data/CI4/undian/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('...')
+#11 {main}
+CRITICAL - 2022-12-17 23:47:36 --> Unknown column 'k.nama' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/ModelPeserta.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Undian.php(34): App\Models\ModelPeserta->listPeserta()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->listPeserta()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+ERROR - 2022-12-17 23:47:56 --> mysqli_sql_exception: Unknown column 'k.nama' in 'field list' in /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /mnt/data/CI4/undian/app/Models/ModelPeserta.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 /mnt/data/CI4/undian/app/Controllers/Undian.php(34): App\Models\ModelPeserta->listPeserta()
+#6 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(927): App\Controllers\Undian->listPeserta()
+#7 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#8 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#9 /mnt/data/CI4/undian/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 /mnt/data/CI4/undian/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('...')
+#11 {main}
+CRITICAL - 2022-12-17 23:47:56 --> Unknown column 'k.nama' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 APPPATH/Models/ModelPeserta.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Undian.php(34): App\Models\ModelPeserta->listPeserta()
+ 7 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Undian->listPeserta()
+ 8 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
